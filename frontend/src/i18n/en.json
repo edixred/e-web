@@ -1,0 +1,138 @@
+{
+  "common": {
+    "appName": "LinguaRead",
+    "loading": "Loading...",
+    "error": "Error",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "search": "Search",
+    "noResults": "No results found"
+  },
+  "nav": {
+    "home": "Home",
+    "myLibrary": "My Library",
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "signOut": "Sign Out",
+    "profile": "Profile",
+    "settings": "Settings"
+  },
+  "home": {
+    "title": "Learn English By Reading",
+    "subtitle": "The most natural way to learn English. Read fascinating stories with parallel translation and synchronized audio.",
+    "getStarted": "Get Started",
+    "alreadyHaveAccount": "I already have an account",
+    "features": {
+      "parallelReading": {
+        "title": "Parallel Reading",
+        "description": "English text with Spanish translation side by side"
+      },
+      "synchronizedAudio": {
+        "title": "Synchronized Audio",
+        "description": "Listen while you read with automatic sentence highlighting"
+      },
+      "aiContent": {
+        "title": "AI Content",
+        "description": "AI-generated stories adapted to your level"
+      },
+      "levelsForEveryone": {
+        "title": "Levels for Everyone",
+        "description": "From A1 (beginner) to C1 (advanced). Our adaptive system adjusts to your level."
+      }
+    }
+  },
+  "auth": {
+    "signIn": {
+      "title": "Welcome Back",
+      "subtitle": "Sign in to continue learning",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Sign In",
+      "noAccount": "Don't have an account?",
+      "signUpLink": "Sign up for free",
+      "invalidCredentials": "Invalid email or password"
+    },
+    "signUp": {
+      "title": "Create Account",
+      "subtitle": "Join LinguaRead and start learning",
+      "name": "Name",
+      "email": "Email",
+      "password": "Password",
+      "englishLevel": "English Level",
+      "submit": "Create Account",
+      "alreadyHaveAccount": "Already have an account?",
+      "signInLink": "Sign in",
+      "registrationFailed": "Registration failed. Please try again."
+    }
+  },
+  "dashboard": {
+    "title": "My Library",
+    "welcome": "Welcome back",
+    "stats": {
+      "storiesRead": "Stories Read",
+      "readingTime": "Reading Time",
+      "currentStreak": "Current Streak"
+    },
+    "filters": {
+      "all": "All"
+    },
+    "newStory": "New Story",
+    "empty": {
+      "title": "No stories yet",
+      "description": "Create your first story with the button above"
+    },
+    "generateModal": {
+      "title": "Generate New Story",
+      "level": "Level",
+      "category": "Category",
+      "length": "Length (words)",
+      "lengths": {
+        "short": "Short (500 words)",
+        "medium": "Medium (800 words)",
+        "long": "Long (1200 words)"
+      },
+      "generate": "Generate",
+      "generating": "Generating..."
+    },
+    "storyCard": {
+      "startReading": "Start reading",
+      "progress": "Progress",
+      "completed": "Completed"
+    }
+  },
+  "reader": {
+    "backToLibrary": "Back to Library",
+    "english": "English",
+    "spanish": "Spanish",
+    "player": {
+      "play": "Play",
+      "pause": "Pause",
+      "skipBack": "Skip back",
+      "skipForward": "Skip forward",
+      "speed": "Speed",
+      "mute": "Mute",
+      "unmute": "Unmute"
+    }
+  },
+  "levels": {
+    "A1": "A1 - Beginner",
+    "A2": "A2 - Elementary",
+    "B1": "B1 - Intermediate",
+    "B2": "B2 - Upper Intermediate",
+    "C1": "C1 - Advanced"
+  },
+  "footer": {
+    "copyright": "Learn English by reading."
+  },
+  "language": {
+    "select": "Select Language",
+    "en": "English",
+    "es": "Spanish"
+  }
+}

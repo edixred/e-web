@@ -1,0 +1,138 @@
+{
+  "common": {
+    "appName": "LinguaRead",
+    "loading": "Cargando...",
+    "error": "Error",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "back": "Volver",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "search": "Buscar",
+    "noResults": "No se encontraron resultados"
+  },
+  "nav": {
+    "home": "Inicio",
+    "myLibrary": "Mi Biblioteca",
+    "signIn": "Iniciar Sesión",
+    "signUp": "Registrarse",
+    "signOut": "Cerrar Sesión",
+    "profile": "Perfil",
+    "settings": "Configuración"
+  },
+  "home": {
+    "title": "Aprende Inglés Leyendo",
+    "subtitle": "La forma más natural de aprender inglés. Lee historias fascinantes con traducción paralela y audio sincronizado.",
+    "getStarted": "Comenzar Ahora",
+    "alreadyHaveAccount": "Ya tengo cuenta",
+    "features": {
+      "parallelReading": {
+        "title": "Lectura Paralela",
+        "description": "Texto en inglés con traducción al español lado a lado"
+      },
+      "synchronizedAudio": {
+        "title": "Audio Sincronizado",
+        "description": "Escucha mientras lees con resaltado automático de oraciones"
+      },
+      "aiContent": {
+        "title": "Contenido IA",
+        "description": "Historias generadas por inteligencia artificial adaptadas a tu nivel"
+      },
+      "levelsForEveryone": {
+        "title": "Niveles para Todos",
+        "description": "Desde A1 (principiante) hasta C1 (avanzado). Nuestro sistema adaptativo se ajusta a tu nivel."
+      }
+    }
+  },
+  "auth": {
+    "signIn": {
+      "title": "Bienvenido de Nuevo",
+      "subtitle": "Inicia sesión para continuar aprendiendo",
+      "email": "Correo electrónico",
+      "password": "Contraseña",
+      "submit": "Iniciar Sesión",
+      "noAccount": "¿No tienes cuenta?",
+      "signUpLink": "Regístrate gratis",
+      "invalidCredentials": "Correo o contraseña inválidos"
+    },
+    "signUp": {
+      "title": "Crear Cuenta",
+      "subtitle": "Únete a LinguaRead y comienza a aprender",
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "password": "Contraseña",
+      "englishLevel": "Nivel de Inglés",
+      "submit": "Crear Cuenta",
+      "alreadyHaveAccount": "¿Ya tienes cuenta?",
+      "signInLink": "Inicia sesión",
+      "registrationFailed": "Error al registrarse. Intenta de nuevo."
+    }
+  },
+  "dashboard": {
+    "title": "Mi Biblioteca",
+    "welcome": "Bienvenido de nuevo",
+    "stats": {
+      "storiesRead": "Historias Leídas",
+      "readingTime": "Tiempo de Lectura",
+      "currentStreak": "Racha Actual"
+    },
+    "filters": {
+      "all": "Todos"
+    },
+    "newStory": "Nueva Historia",
+    "empty": {
+      "title": "No hay historias todavía",
+      "description": "Crea tu primera historia con el botón de arriba"
+    },
+    "generateModal": {
+      "title": "Generar Nueva Historia",
+      "level": "Nivel",
+      "category": "Categoría",
+      "length": "Extensión (palabras)",
+      "lengths": {
+        "short": "Corta (500 palabras)",
+        "medium": "Media (800 palabras)",
+        "long": "Larga (1200 palabras)"
+      },
+      "generate": "Generar",
+      "generating": "Generando..."
+    },
+    "storyCard": {
+      "startReading": "Comenzar a leer",
+      "progress": "Progreso",
+      "completed": "Completado"
+    }
+  },
+  "reader": {
+    "backToLibrary": "Volver a Biblioteca",
+    "english": "Inglés",
+    "spanish": "Español",
+    "player": {
+      "play": "Reproducir",
+      "pause": "Pausar",
+      "skipBack": "Retroceder",
+      "skipForward": "Adelantar",
+      "speed": "Velocidad",
+      "mute": "Silenciar",
+      "unmute": "Activar sonido"
+    }
+  },
+  "levels": {
+    "A1": "A1 - Principiante",
+    "A2": "A2 - Elemental",
+    "B1": "B1 - Intermedio",
+    "B2": "B2 - Intermedio Alto",
+    "C1": "C1 - Avanzado"
+  },
+  "footer": {
+    "copyright": "Aprende inglés leyendo."
+  },
+  "language": {
+    "select": "Seleccionar Idioma",
+    "en": "Inglés",
+    "es": "Español"
+  }
+}
