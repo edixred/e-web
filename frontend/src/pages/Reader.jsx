@@ -9,10 +9,13 @@ const Reader = () => {
   const { t } = useTranslation()
   const { storyId } = useParams()
   const [showSettings, setShowSettings] = useState(false)
+  const [showSpanish, setShowSpanish] = useState(false)
   
   const { data: story, isLoading } = useStory(storyId)
   const { data: audioData } = useStoryAudio(storyId)
   const updateProgress = useUpdateProgress()
+  
+  const isTheLostKey = story?.title_en?.toLowerCase().includes('the lost key')
   
   const {
     isSpeaking,
@@ -95,17 +98,18 @@ const Reader = () => {
                   Audio: {ttsMethod === 'webSpeech' ? 'Browser TTS' : 'External TTS'}
                 </p>
               </div>
-              <button
-                onClick={() => togglePlayPause(story?.content_en || '')}
-                className="p-3 bg-primary rounded-full hover:bg-primary-dark transition-colors"
-                title={isSpeaking ? t('reader.player.pause') : t('reader.player.play')}
-              >
-                {isSpeaking ? (
-                  <Pause className="h-6 w-6 text-white" />
-                ) : (
-                  <Play className="h-6 w-6 text-white" />
-                )}
-              </button>
+              {isTheLostKey && (
+                <button
+                  onClick={() => setShowSpanish(!showSpanish)}
+                  className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all shadow-sm ${
+                    showSpanish 
+                      ? 'bg-primary text-white' 
+                      : 'bg-amber-100 text-amber-700 border border-amber-300 hover:bg-amber-200'
+                  }`}
+                >
+                  {showSpanish ? '✓ ES' : 'ES 🇪🇸'}
+                </button>
+              )}
             </div>
           </div>
 
@@ -135,6 +139,7 @@ const Reader = () => {
               </div>
             </div>
 
+            {!isTheLostKey || showSpanish ? (
             <div className="flex-1 p-6">
               <h2 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-4">{t('reader.spanish')}</h2>
               <div className="story-content space-y-3">
@@ -148,6 +153,7 @@ const Reader = () => {
                 ))}
               </div>
             </div>
+          ) : null}
           </div>
         </div>
 
