@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
 import { useTranslation } from 'react-i18next'
 import { useStories, useUserStats, useGenerateStory, useUserProgress } from '../hooks/useStories'
-import { BookOpen, Plus, Clock, Flame, ChevronRight, Loader2 } from 'lucide-react'
+import { BookOpen, Plus, Clock, Flame, ChevronRight, Loader2, BookMarked, Gamepad2 } from 'lucide-react'
+import VocabularyMatch from '../components/VocabularyMatch'
 
 const levelColors = {
   A1: 'bg-green-100 text-green-700',
@@ -79,6 +80,14 @@ const Dashboard = () => {
         </div>
       </div>
 
+      <div className="mb-8">
+        <h2 className="text-xl font-semibold text-slate-800 mb-4 flex items-center gap-2">
+          <Gamepad2 className="h-5 w-5 text-primary" />
+          Vocabulary Match
+        </h2>
+        <VocabularyMatch selectedLevel={levelFilter || 'A1'} />
+      </div>
+
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
         <div className="flex gap-2">
           <button
@@ -109,6 +118,14 @@ const Dashboard = () => {
           <Plus className="h-4 w-4" />
           {t('dashboard.newStory')}
         </button>
+
+        <Link
+          to="/vocabulary"
+          className="flex items-center gap-2 bg-secondary text-white px-4 py-2 rounded-lg hover:bg-secondary/90 transition-colors"
+        >
+          <BookMarked className="h-4 w-4" />
+          Vocabulary
+        </Link>
       </div>
 
       {isLoading ? (
