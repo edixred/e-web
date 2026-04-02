@@ -6,6 +6,7 @@ import Login from './pages/Login'
 import Register from './pages/Register'
 import Dashboard from './pages/Dashboard'
 import Reader from './pages/Reader'
+import Vocabulary from './pages/Vocabulary'
 
 const ProtectedRoute = ({ children }) => {
   const { user, loading } = useAuth()
@@ -41,6 +42,14 @@ function App() {
           element={
             <ProtectedRoute>
               <Reader />
+            </ProtectedRoute>
+          } 
+        />
+        <Route 
+          path="vocabulary" 
+          element={
+            <ProtectedRoute>
+              <Vocabulary />
             </ProtectedRoute>
           } 
         />

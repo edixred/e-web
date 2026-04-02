@@ -36,6 +36,9 @@ const Layout = () => {
                   <Link to="/dashboard" className="text-slate-600 hover:text-primary transition-colors">
                     {t('nav.myLibrary')}
                   </Link>
+                  <Link to="/vocabulary" className="text-slate-600 hover:text-primary transition-colors">
+                    Vocabulary
+                  </Link>
                   <div className="flex items-center gap-4">
                     <span className="text-slate-600">{user.name}</span>
                     <button
@@ -94,6 +97,13 @@ const Layout = () => {
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {t('nav.myLibrary')}
+                  </Link>
+                  <Link
+                    to="/vocabulary"
+                    className="block text-slate-600 hover:text-primary"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Vocabulary
                   </Link>
                   <button
                     onClick={handleLogout}
